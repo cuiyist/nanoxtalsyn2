@@ -1,6 +1,6 @@
-# MatterSyn storage archive
+# NanoXtalSyn storage archive
 
-This public repository stores necessary, publication-safe MatterSyn archival material and storage reports. The active source and website remain in [mattersyn](https://github.com/cuiyist/mattersyn) and [mattersyn-site](https://github.com/cuiyist/mattersyn-site).
+This public repository stores necessary, publication-safe NanoXtalSyn archival material and storage reports. The active source and website remain in [nanoxtalsyn](https://github.com/cuiyist/nanoxtalsyn) and [nanoxtalsyn-site](https://github.com/cuiyist/nanoxtalsyn-site).
 
 Original papers and supporting information, source text, quoted extraction passes and pairs, private audits, model payloads, model weights and credentials are excluded. Rebuildable build folders and redundant checkouts are deleted after verification instead of being uploaded here.
 
