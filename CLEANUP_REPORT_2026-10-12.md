@@ -1,3 +1,30 @@
+# NanoXtalSyn disk cleanup — 2026-11-10
+
+**This safe cleanup pass is complete. C: has 342.37 GB free (318.86 GiB) at 2026-11-10T23:38:49.458785+00:00. The earlier 400 GB target is not met.** The measured file-storage reduction is approximately **0.975 GB**: 36.84 MB of duplicate/cache files removed, plus 938.45 MB saved through ordinary NTFS compression.
+
+Removed **112 files**: two redundant CI download ZIPs and 110 generated Python bytecode files. All 244 extracted archive members (screenshots and receipts) were independently byte/hash matched and retained; corresponding Python sources were retained. No original paper or owner file was deleted.
+
+Compressed **113 closed metadata files** without changing their logical bytes, paths, file identities or modification times. Full before/after SHA256 checks passed. These comprise two closed size-census snapshots and 111 generated build/file inventories and dataset summary indexes. Original failed-candidate and UNAPPROVED statuses remain as written; compression grants no release or scientific credit.
+
+| Batch | Actual C free before (GB) | Actual C free after (GB) | Logical GB removed | API-reported storage GB reduced by compression |
+|---|---:|---:|---:|---:|
+| Duplicate downloads and Python caches | 342.114 | 342.154 | 0.036837 | 0 |
+| Two closed census snapshots | 341.683 | 341.808 | 0 | 0.124717 |
+| 111 closed generated manifests | 341.796 | 342.374 | 0 | 0.813729 |
+
+GB means decimal GB. Free-space changes are not isolated to this cleanup: other programs were active. The first C: reading was 328.23 GB; the larger net change to the final reading must not be credited to this job. Deleted logical bytes and GetCompressedFileSizeW reductions are file-level measures, not a claim of exact freed allocation clusters.
+
+The metadata-only census observed **547.92 GB logical data across 9,593,138 file entries**. Reparse paths and access/long-path errors in seven roots were left alone; this is not an assertion that every inaccessible item was inventoried. Most remaining space is retained research, protected originals, Git history, models/runtime and mixed historical snapshots. Existing protected/no-retry roots are unchanged. Six metadata candidates were left out: four in restricted historical roots, one unique working-file preservation copy and one without retained producer-closure proof.
+
+Owner-created/unknown files, PDFs/SI, source text, quotes, model passes, pairs, training data, credentials, active programs, Qwen and its runtime, canonical Source/Site and historical restoration chains remain preserved. No program was stopped, no Git garbage collection/repack/prune ran, and no paper reading, import, website build or publication was started. All earlier failures and held scopes remain recorded privately.
+
+Website N remains live and unchanged: Source `e7828bddc8d37d4714f8cb57b9b57fe29d6115c2`, Site `ccd4b8e6f6096dbe04f03baff52bb525a83867ed`, **2,916 papers / 6,865 records**. Source is clean and its record tree remains `deb3b4507fd2e681f272b868d77b9aea47c52ed5`. Audit, Worker A/B and the five older owner-waiting entries remain paused.
+
+**Current task: cleanup pass complete; waiting for the owner's next instruction.** Additional space is not promised from protected or unqualified files. The initial estimate was 30–60 minutes; the final compression itself took 14 seconds after the ownership, closure and preservation checks.
+
+
+---
+
 ## Root cleanup milestone — 2026-10-21T02:50:22.871851+00:00
 
 Milestone `Q18-known-leaves:33ffae2e9eb7b6da`. Removed **453,106 generated file copies / 33,087,223,786 logical bytes** from the completed P18 Source boundary, C18 static/data/dist, and R18 candidate/final/static/data/dist, Site stage and known preview payload. The original public reconstruction is retained in Source `793bfa690ec10b38b5006e56d5a8fd623d5f298b` and Site `d53a91b494237a76563d90db5f0db3778b5c5ea6`.
